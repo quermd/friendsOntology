@@ -1,0 +1,339 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo",
+      "@type" : "@id"
+    },
+    "hasTitle" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfEpisodes" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "emissionOfInSeries" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries",
+      "@type" : "@id"
+    },
+    "Furniture" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "hasSeasonStart" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasEpisodeSynopsis" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Platform" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform"
+    },
+    "isMasterOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasSeasonNumber" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "CharacterIntroduction" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "TelevisionSeason" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEpisodeNumber" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "belongsToPlace" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace",
+      "@type" : "@id"
+    },
+    "livesIn" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn",
+      "@type" : "@id"
+    },
+    "placesPlot" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot",
+      "@type" : "@id"
+    },
+    "hasSeasonEnd" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EmisionInSeries" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries"
+    },
+    "hasItemDescription" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasOwner" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner",
+      "@type" : "@id"
+    },
+    "hasEpisodeTitle" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasParticipants" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character"
+    },
+    "InSeriesSeries" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries"
+    },
+    "hasEpisode" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode",
+      "@type" : "@id"
+    },
+    "hasBirthdate" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "jobsPlace" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "characterAppearsInEpisode" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode",
+      "@type" : "@id"
+    },
+    "InSeries" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor"
+    },
+    "hasItem" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem",
+      "@type" : "@id"
+    },
+    "hasGender" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender",
+      "@type" : "http://dbpedia.org/ontology/Gender"
+    },
+    "hasNationality" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality",
+      "@type" : "http://dbpedia.org/ontology/Country"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Wedding" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding"
+    },
+    "hasWorker" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker",
+      "@type" : "@id"
+    },
+    "participatesIn" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn",
+      "@type" : "@id"
+    },
+    "hasAudience" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isSeasonOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf",
+      "@type" : "@id"
+    },
+    "episdodeHasCharacter" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter",
+      "@type" : "@id"
+    },
+    "portrayer" : {
+      "@id" : "https://dbpedia.org/ontology/portrayer",
+      "@type" : "@id"
+    },
+    "TelevisionEpisode" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode"
+    },
+    "Place" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place"
+    },
+    "hasPetName" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isFriendOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf",
+      "@type" : "@id"
+    },
+    "worksInPlace" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "placeJob" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob",
+      "@type" : "@id"
+    },
+    "hasPlatformName" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasGenre" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Plot" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot"
+    },
+    "isEpisodeOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf",
+      "@type" : "@id"
+    },
+    "takesPlaceIn" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn",
+      "@type" : "@id"
+    },
+    "OnAir" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir"
+    },
+    "placeInhabitants" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants",
+      "@type" : "@id"
+    },
+    "epìsodeFirstOnAir" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir",
+      "@type" : "@id"
+    },
+    "isOwnerOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf",
+      "@type" : "@id"
+    },
+    "InSeriesFictionalCharacter" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter"
+    },
+    "inSeriesEmission" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series"
+    },
+    "hasFurniture" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture",
+      "@type" : "@id"
+    },
+    "isPortraierOf" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf",
+      "@type" : "@id"
+    },
+    "worksIn" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn",
+      "@type" : "@id"
+    },
+    "inSeriesHasFictionaCharacter" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter",
+      "@type" : "@id"
+    },
+    "hasSynopsis" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Job" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "hasMaster" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster",
+      "@type" : "@id"
+    },
+    "firstOnAirEpisode" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode",
+      "@type" : "@id"
+    },
+    "furnitureName" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "InSeriesSpot" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot"
+    },
+    "fictionalCharacterAppearsInInSeries" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries",
+      "@type" : "@id"
+    },
+    "Pet" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet"
+    },
+    "Item" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item"
+    },
+    "hasDescription" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEmissionDate" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "placeWorker" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker",
+      "@type" : "@id"
+    },
+    "hasSeason" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason",
+      "@type" : "@id"
+    },
+    "hasNumberOfSeasons" : {
+      "@id" : "http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}
