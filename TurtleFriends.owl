@@ -1,0 +1,1191 @@
+@prefix : <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> .
+
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> rdf:type owl:Ontology ;
+                                                                       owl:versionIRI <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> ;
+                                                                       dc:created "2022-04-16T12:00:00"^^xsd:dateTime ;
+                                                                       dc:creator "Quer Masagué Deu" ;
+                                                                       dc:title "Friends TV Series ontology" ;
+                                                                       terms:contributor "Quer Masagué Deu" ;
+                                                                       terms:license <http://creativecommons.org/licenses/by/2.0/> ;
+                                                                       owl:versionInfo 1.7 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/created
+dc:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type rdfs:Datatype ;
+                                      rdfs:comment "Contry data type"^^xsd:string .
+
+
+###  http://dbpedia.org/ontology/Gender
+<http://dbpedia.org/ontology/Gender> rdf:type rdfs:Datatype ;
+                                     rdfs:comment "Gender data type"^^xsd:string .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasItem ;
+           rdfs:domain :Item ;
+           rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+           rdfs:comment "An intem belongs to an individual"^^xsd:string ;
+           rdfs:label "belongsTo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace
+:belongsToPlace rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasFurniture ;
+                rdfs:domain :Furniture ;
+                rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                rdfs:comment "an item of a place"^^xsd:string ;
+                rdfs:label "belongsToPlace"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode
+:characterAppearsInEpisode rdf:type owl:ObjectProperty ;
+                           owl:inverseOf :episdodeHasCharacter ;
+                           rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                           rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                           rdfs:comment "This character appears in that episode"@en ;
+                           rdfs:label "characterAppearsInEpisode"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries
+:emissionOfInSeries rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :inSeriesEmission ;
+                    rdfs:domain :EmisionInSeries ;
+                    rdfs:range :InSeries ;
+                    rdfs:comment "Emission of In Series show or spot"^^xsd:string ;
+                    rdfs:label "emissionOfInSeries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter
+:episdodeHasCharacter rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                      rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                      rdfs:comment "In this episode appears that character"@en ;
+                      rdfs:label "episdodeHasCharacter"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir
+:epìsodeFirstOnAir rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   owl:inverseOf :firstOnAirEpisode ;
+                   rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                   rdfs:range :OnAir ;
+                   rdfs:comment "the emision of an episode"^^xsd:string ;
+                   rdfs:label "epìsodeFirstOnAir"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries
+:fictionalCharacterAppearsInInSeries rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf :inSeriesHasFictionaCharacter ;
+                                     rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> ;
+                                     rdfs:range :InSeries ;
+                                     rdfs:comment "Fictional Character appearance in In Series"^^xsd:string ;
+                                     rdfs:label "fictionalCharacterAppearsInInSeries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode
+:firstOnAirEpisode rdf:type owl:ObjectProperty ;
+                   rdfs:domain :OnAir ;
+                   rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                   rdfs:comment "The emision of an episode"^^xsd:string ;
+                   rdfs:label "firstOnAirEpisode"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture
+:hasFurniture rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+              rdfs:range :Furniture ;
+              rdfs:comment "a place has furniture"^^xsd:string ;
+              rdfs:label "hasFurniture"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem
+:hasItem rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+         rdfs:range :Item ;
+         rdfs:comment "An individual has an item"^^xsd:string ;
+         rdfs:label "hasItem"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster
+:hasMaster rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMasterOf ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> ;
+           rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+           rdfs:comment "A pet has a master/owner"@en ;
+           rdfs:label "hasMaster"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker
+:hasWorker rdf:type owl:ObjectProperty ;
+           owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> ;
+           rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> ;
+           rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+           rdfs:comment "A job has workers"^^xsd:string ;
+           rdfs:label "hasWorker"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission
+:inSeriesEmission rdf:type owl:ObjectProperty ;
+                  rdfs:domain :InSeries ;
+                  rdfs:range :EmisionInSeries ;
+                  rdfs:comment "InSeries show or spot emited"^^xsd:string ;
+                  rdfs:label "inSeriesEmission"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter
+:inSeriesHasFictionaCharacter rdf:type owl:ObjectProperty ;
+                              rdfs:domain :InSeries ;
+                              rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> ;
+                              rdfs:comment "In Series appearance of Fictional Character"^^xsd:string ;
+                              rdfs:label "inSeriesHasFictionaCharacter"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf
+:isMasterOf rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+            rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> ;
+            rdfs:comment "A character may have a pet"@en ;
+            rdfs:label "isMasterOf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace
+:jobsPlace rdf:type owl:ObjectProperty ;
+           owl:inverseOf :placeJob ;
+           rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> ;
+           rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+           rdfs:comment "A job is developed in a place"^^xsd:string ;
+           rdfs:label "jobsPlace"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants
+:placeInhabitants rdf:type owl:ObjectProperty ;
+                  owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> ;
+                  rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                  rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                  rdfs:comment "Characters who live in a place"^^xsd:string ;
+                  rdfs:label "placeInhabitants"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob
+:placeJob rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+          rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> ;
+          rdfs:comment "the place where the job is developed"^^xsd:string ;
+          rdfs:label "placeJob"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker
+:placeWorker rdf:type owl:ObjectProperty ;
+             owl:inverseOf :worksInPlace ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+             rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+             rdfs:comment "The workers that work in a place"^^xsd:string ;
+             rdfs:label "placeWorker"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot
+:placesPlot rdf:type owl:ObjectProperty ;
+            owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> ;
+            rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+            rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> ;
+            rdfs:comment "Plots that happen in a place"^^xsd:string ;
+            rdfs:label "placesPlot"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace
+:worksInPlace rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+              rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+              rdfs:comment "Someone who works in a place"^^xsd:string ;
+              rdfs:label "worksInPlace"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> rdf:type owl:ObjectProperty ;
+                                                                                 owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                                                                                 rdfs:comment "has episode"@en ;
+                                                                                 rdfs:label "hasEpisode"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> rdf:type owl:ObjectProperty ;
+                                                                               owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> ;
+                                                                               rdf:type owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                               rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                               rdfs:comment "has owner"@en ;
+                                                                               rdfs:label "hasOwner"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> rdf:type owl:ObjectProperty ;
+                                                                                      owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                      rdfs:comment "An event has participants"@en ;
+                                                                                      rdfs:label "hasParticipant"@en .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> rdf:type owl:ObjectProperty ;
+                                                                                owl:inverseOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                                rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                rdfs:comment "A series have one or more seasons"@en ;
+                                                                                rdfs:label "hasSeason"@en .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                  rdfs:comment "is episode of season"@en ;
+                                                                                  rdfs:label "isEpisodeOf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> rdf:type owl:ObjectProperty ,
+                                                                                          owl:SymmetricProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                 rdfs:comment "these are friends"@en ;
+                                                                                 rdfs:label "isFriendOf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> rdf:type owl:ObjectProperty ,
+                                                                                         owl:FunctionalProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                                rdfs:comment "owns"@en ;
+                                                                                rdfs:label "isOwnerOf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> rdf:type owl:ObjectProperty ;
+                                                                                    owl:inverseOf <https://dbpedia.org/ontology/portrayer> ;
+                                                                                    rdf:type owl:FunctionalProperty ,
+                                                                                             owl:InverseFunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                    rdfs:comment "An Actor representing a fictional character"@en ;
+                                                                                    rdfs:label "isPortrayerOf"@en .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                                 rdfs:comment "An episode is part of a Season"@en ;
+                                                                                 rdfs:label "isSeasonOf"@en .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                              rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                              rdfs:comment "Someone lives in a place"@en ;
+                                                                              rdfs:label "livesIn"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> ;
+                                                                                     rdfs:comment "An agent participates in an event"@en ;
+                                                                                     rdfs:label "participatesIn"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                                   rdfs:comment "this happens in that place"@en ;
+                                                                                   rdfs:label "takesPlaceIn"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                              rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> ;
+                                                                              rdfs:comment "this individual works in that place"@en ;
+                                                                              rdfs:label "worksIn"^^xsd:string .
+
+
+###  https://dbpedia.org/ontology/portrayer
+<https://dbpedia.org/ontology/portrayer> rdf:type owl:ObjectProperty ,
+                                                  owl:FunctionalProperty ,
+                                                  owl:InverseFunctionalProperty ;
+                                         rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                         rdfs:range <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> ;
+                                         rdfs:comment "To represent dramatically, as on the stage"@en ;
+                                         rdfs:label "portrayer"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName
+:furnitureName rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Furniture ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The name of furniture"^^xsd:string ;
+               rdfs:label "furnitureName"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience
+:hasAudience rdf:type owl:DatatypeProperty ;
+             rdfs:domain :OnAir ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "The emision had audience/viewers"^^xsd:string ;
+             rdfs:label "hasAudience"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis
+:hasEpisodeSynopsis rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Episode synopsis"@en ;
+                    rdfs:label "hasEpisodeSynopsis"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle
+:hasEpisodeTitle rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Episode title"@en ;
+                 rdfs:label "hasEpisodeTitle"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription
+:hasItemDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :Item ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "An item description"^^xsd:string ;
+                    rdfs:label "hasItemDescription"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName
+:hasPetName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A pet has a name"^^xsd:string ;
+            rdfs:label "hasPetName"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName
+:hasPlatformName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Platform name"@en ;
+                 rdfs:label "hasPlatformName"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ;
+                                                                                   rdfs:range xsd:dateTime ;
+                                                                                   rdfs:comment "The birth date"@en ;
+                                                                                   rdfs:label "hasBirthdate"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                                     rdfs:range xsd:string ;
+                                                                                     rdfs:comment "The description of the entity"@en ;
+                                                                                     rdfs:label "hasDescription"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                                                                                  rdfs:range xsd:integer ;
+                                                                                  rdfs:comment "The duration in minutes of an episode"@en ;
+                                                                                  rdfs:label "hasDuration"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain :OnAir ;
+                                                                                      rdfs:range xsd:dateTime ;
+                                                                                      rdfs:comment "The date of emission in TV"@en ;
+                                                                                      rdfs:label "hasEmissionDate"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                                                                                       rdfs:range xsd:integer ;
+                                                                                       rdfs:comment "The number of the episode in the season"@en ;
+                                                                                       rdfs:label "hasEpisodeNumber"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ;
+                                                                                rdfs:range <http://dbpedia.org/ontology/Gender> ;
+                                                                                rdfs:comment "The gender of an artist or character"@en ;
+                                                                                rdfs:label "hasGender"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                               rdfs:range xsd:string ;
+                                                                               rdfs:comment "The genre of a work"@en ;
+                                                                               rdfs:label "hasGenre"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ;
+                                                                              rdfs:range xsd:string ;
+                                                                              rdfs:comment "The name of an entity"@en ;
+                                                                              rdfs:label "hasName"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ;
+                                                                                     rdfs:range <http://dbpedia.org/ontology/Country> ;
+                                                                                     rdfs:comment "The nationality of a person"@en ;
+                                                                                     rdfs:label "hasNationality"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                          rdfs:range xsd:integer ;
+                                                                                          rdfs:comment "The total of episodes of a season or series"@en ;
+                                                                                          rdfs:label "hasNumberOfEpisodes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                                         rdfs:range xsd:integer ;
+                                                                                         rdfs:comment "The number of seasons of a series"@en ;
+                                                                                         rdfs:label "hasNumberOfSeasons"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                   rdfs:range xsd:integer ;
+                                                                                   rdfs:comment "The date of emision of the last episode of a season"@en ;
+                                                                                   rdfs:label "hasSeasonEnd"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                      rdfs:range xsd:integer ;
+                                                                                      rdfs:comment "The number of season"@en ;
+                                                                                      rdfs:label "hasSeasonNumber"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                                     rdfs:range xsd:dateTime ;
+                                                                                     rdfs:comment "The date of season start"@en ;
+                                                                                     rdfs:label "hasSeasonStart"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                                  rdfs:range xsd:string ;
+                                                                                  rdfs:comment "Synopsis"@en ;
+                                                                                  rdfs:label "hasSynopsis"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                               rdfs:range xsd:string ;
+                                                                               rdfs:comment "Title that defines a series, season or episode"@en ;
+                                                                               rdfs:label "hasTitle"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction
+:CharacterIntroduction rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> ;
+                       owl:disjointWith <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> ;
+                       rdfs:comment "Event when special character appears for first time"^^xsd:string ;
+                       rdfs:label "CharacterIntroduction"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries
+:EmisionInSeries rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> ;
+                 rdfs:comment "A kind of event that happens when In Series is emmited"^^xsd:string ;
+                 rdfs:label "EmisionInSeries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture
+:Furniture rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :belongsToPlace ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :furnitureName ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:comment "Element of Furniture"^^xsd:string ;
+           rdfs:label "Furniture"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries
+:InSeries rdf:type owl:Class ;
+          rdfs:comment "Inside series there is tv shows and spots"^^xsd:string ;
+          rdfs:label "InSeries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot
+:InSeriesSpot rdf:type owl:Class ;
+              rdfs:subClassOf :InSeries ;
+              owl:disjointWith <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> ;
+              rdfs:comment "Represents an spot inside the series"^^xsd:string ;
+              rdfs:label "InSeriesSpot"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item
+:Item rdf:type owl:Class ;
+      rdfs:comment "Something that individual may have"^^xsd:string ;
+      rdfs:label "Item"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir
+:OnAir rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :firstOnAirEpisode ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAudience ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:dateTime
+                       ] ;
+       rdfs:comment "Firs on air of an episode"^^xsd:string ;
+       rdfs:label "OnAir"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ,
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> ;
+                                                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                              owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                            ] ;
+                                                                            rdfs:comment "An actor or actress is a person who acts in a dramatic production and who works in film, television, theatre, or radio in that capacity." ;
+                                                                            rdfs:label "Actor" ;
+                                                                            rdfs:sameAs <http://mappings.dbpedia.org/server/ontology/classes/#Actor> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :isMasterOf ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :worksInPlace ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://dbpedia.org/ontology/portrayer> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor>
+                                                                                                ] ;
+                                                                                rdfs:comment "Is a individual from work"@en ;
+                                                                                rdfs:label "Character" ;
+                                                                                rdfs:sameAs <https://dbpedia.org/ontology/FictionalCharacter> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> ;
+                                                                                              owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                            ] ;
+                                                                            rdfs:comment "Some special happening woth to mention"@en ;
+                                                                            rdfs:label "Event"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <https://dbpedia.org/ontology/portrayer> ;
+                                                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                   owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                                                 ] ;
+                                                                                                 rdfs:comment "Inside the Series, there are TV sereies with Characters portrayed by other Characters"@en ;
+                                                                                                 rdfs:label "InSeriesFictionalCharacter"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf :InSeries ;
+                                                                                     rdfs:comment "Inside the series, there eixist a TV series that Characters see and work in as actors"@en ;
+                                                                                     rdfs:label "InSeriesSeries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :hasWorker ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :jobsPlace ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                                                                                          ] ;
+                                                                          rdfs:comment "Fictional place where someone works in"@en ;
+                                                                          rdfs:label "Job"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> ;
+                                                                                               owl:someValuesFrom <http://dbpedia.org/ontology/Country>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> ;
+                                                                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onDataRange xsd:dateTime
+                                                                                             ] ;
+                                                                             rdfs:comment "Human living being"@en ;
+                                                                             rdfs:label "Person"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :hasMaster ;
+                                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                            owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                          ] ;
+                                                                          rdfs:comment "Domestic animal that belongs to some character"@en ;
+                                                                          rdfs:label "Pet"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty :placeJob ;
+                                                                                              owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job>
+                                                                                            ] ,
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty :placeWorker ;
+                                                                                              owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                            ] ,
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> ;
+                                                                                              owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                            ] ;
+                                                                            rdfs:comment "Fictional place where things happens"@en ;
+                                                                            rdfs:label "Place"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :hasPlatformName ;
+                                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                 owl:onDataRange xsd:string
+                                                                                               ] ;
+                                                                               rdfs:comment "Media platform where the serie was emmited"@en ;
+                                                                               rdfs:label "Platform"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> ;
+                                                                                             owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                                                                                           ] ;
+                                                                           rdfs:comment "A plot explanains what happens in a series, season or  episode"@en ;
+                                                                           rdfs:label "Plot" .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> ;
+                                                                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> ;
+                                                                                               owl:someValuesFrom xsd:string
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onDataRange xsd:integer
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onDataRange xsd:string
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> ;
+                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onDataRange xsd:string
+                                                                                             ] ;
+                                                                             rdfs:comment "A series is a tv show divided in several episodes"@en ;
+                                                                             rdfs:label "Series"@en ;
+                                                                             rdfs:sameAs <https://dbpedia.org/ontology/series> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason>
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :epìsodeFirstOnAir ;
+                                                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onClass :OnAir
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :hasEpisodeSynopsis ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onDataRange xsd:string
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :hasEpisodeTitle ;
+                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onDataRange xsd:string
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> ;
+                                                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onDataRange xsd:integer
+                                                                                                        ] ,
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> ;
+                                                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                          owl:onDataRange xsd:integer
+                                                                                                        ] ;
+                                                                                        rdfs:label "Episode" ;
+                                                                                        rdfs:sameAs <http://mappings.dbpedia.org/server/ontology/classes/TelevisionEpisode> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> ;
+                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode>
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> ;
+                                                                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                         owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series>
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> ;
+                                                                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                         owl:onDataRange xsd:integer
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> ;
+                                                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                         owl:onDataRange xsd:dateTime
+                                                                                                       ] ,
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> ;
+                                                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                         owl:onDataRange xsd:dateTime
+                                                                                                       ] ;
+                                                                                       rdfs:label "Season" ;
+                                                                                       rdfs:sameAs <http://mappings.dbpedia.org/server/ontology/classes/TelevisionSeason> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> ;
+                                                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                                                                                              ] ;
+                                                                              rdfs:comment "Special event where two people get married"@en ;
+                                                                              rdfs:label "Wedding"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa
+:CentralPerkSofa rdf:type owl:NamedIndividual ,
+                          :Furniture ;
+                 :belongsToPlace <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> ;
+                 :furnitureName "Sofa"^^xsd:string ;
+                 rdfs:comment "Central Perk sofa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey
+:Joey rdf:type owl:NamedIndividual ,
+               <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+      :isMasterOf <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> ;
+      <https://dbpedia.org/ontology/portrayer> :MatLeBlanc ;
+      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Male"^^<http://dbpedia.org/ontology/Gender> ;
+      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Joey Tribbiani" ;
+      rdfs:comment "Joey Tribbiani character"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc
+:MatLeBlanc rdf:type owl:NamedIndividual ,
+                     <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> ;
+            <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> :Joey ;
+            <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> "1967-07-25T00:00:00"^^xsd:dateTime ;
+            <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Male"^^<http://dbpedia.org/ontology/Gender> ;
+            <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Matthew Steven \"Matt\" LeBlanc" ;
+            rdfs:comment "Actor Mat LeBlanc"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC
+:NBC rdf:type owl:NamedIndividual ,
+              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> ;
+     :hasPlatformName "NBC" ;
+     rdfs:comment "Platform NBC"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir
+:S01E01OnAir rdf:type owl:NamedIndividual ,
+                      :OnAir ;
+             :firstOnAirEpisode <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> ;
+             :hasAudience 21500000 ;
+             <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> "1994-11-22T00:00:00"^^xsd:dateTime ;
+             rdfs:comment "Emission of ep1 s1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21
+:S03E21 rdf:type owl:NamedIndividual ,
+                 <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> ;
+        :hasEpisodeSynopsis "Pete offers Monica the head chef job at a new restaurant he just bought, but she suspects he is using it to woo her. When he insists he is over her and has met someone else, Phoebe correctly surmises he is lying. While Pete and Monica inspect the restaurant, Monica realizes Pete's true motive, then surprisingly discovers she has genuine feelings for him. Joey and Chandler adopt a chick and a duck. When Rachel struggles to get ready for a work event due to a broken rib, Ross tries to assist her, then ultimately skips being on a panel for the Discovery Channel to take her to a hospital when he realizes she is in too much pain to attend the event. This leaves her touched by what he gave up to help her, and she is left feeling positive about him for the first time in a long time." ;
+        :hasEpisodeTitle "The One With A Chick And A Duck" ;
+        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> 30 ;
+        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> 21 ;
+        rdfs:comment "Episode 21 season3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> ;
+                                                                                  <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> "Central Perk" ;
+                                                                                  rdfs:comment "Central Perk bar"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> ;
+                                                                            :hasMaster :Joey ;
+                                                                            :hasPetName "Chick" ;
+                                                                            rdfs:comment "Pet Chick"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> ,
+                                                                                                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> "Sitcom" ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> 10 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> "Episodes depict the friends comedic and romantic adventures and career issues."^^xsd:string ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> "Friends" ;
+                                                                              rdfs:comment "Friends ontology"@en ;
+                                                                              rdfs:sameAs "https://dbpedia.org/page/Friends"@en ;
+                                                                              rdfs:seeAlso "https://friends.fandom.com/wiki/Friends_Wiki"@en .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> ;
+                                                                                      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> ;
+                                                                                      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> "1969-02-11T00:00:00"^^xsd:dateTime ;
+                                                                                      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Female"^^<http://dbpedia.org/ontology/Gender> ;
+                                                                                      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Jennifer Aniston" ;
+                                                                                      rdfs:comment "Jennifer Aniston"@en ;
+                                                                                      rdfs:sameAs <https://dbpedia.org/page/Jennifer_Aniston> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> ;
+                                                                                  <https://dbpedia.org/ontology/portrayer> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> ;
+                                                                                  <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Female"^^<http://dbpedia.org/ontology/Gender> ;
+                                                                                  <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Rachel Green" ;
+                                                                                  rdfs:comment "Rachel Green instance of Character"@en ;
+                                                                                  rdfs:sameAs <https://dbpedia.org/page/Rachel_Green> .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> ;
+                                                                             <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> ;
+                                                                             :hasEpisodeSynopsis "After leaving her fiancé, Barry, at the altar, Rachel finds herself in Central Perk Café, soaking wet in her wedding dress, looking for her old friend Monica. Rachel ends up moving into Monica's New York apartment. Chandler and Joey, who live across the hall from Monica, console Ross after his wife Carol, has just left him for a woman. Monica, a chef, falls for \"Paul the Wine Guy\" only to be crushed that their night of passion was merely a one-night stand. The gang urge Rachel to be more independent by cutting up her father's credit cards. Rachel, who has never worked before, is offered a waitress job at Central Perk. Ross, who has had a crush on Rachel since high school, asks her out." ;
+                                                                             :hasEpisodeTitle """\"Pilot\"
+\"The One Where Monica Gets a Roommate\"
+\"The One Where It All Began\"
+\"The First One\"""" ;
+                                                                             <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> 30 ;
+                                                                             <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> 1 ;
+                                                                             rdfs:comment "Episode 1 season 1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 1 ;
+                                                                              rdfs:comment "Season1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                               <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                               <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 18 ;
+                                                                               <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 10 ;
+                                                                               rdfs:comment "Season10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 2 ;
+                                                                              rdfs:comment "Season2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> :S03E21 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 25 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 3 ;
+                                                                              rdfs:comment "Season3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 4 ;
+                                                                              rdfs:comment "Season4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 5 ;
+                                                                              rdfs:comment "Season5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 25 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 6 ;
+                                                                              rdfs:comment "Season6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 7 ;
+                                                                              rdfs:comment "Season7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 8 ;
+                                                                              rdfs:comment "Season8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> 24 ;
+                                                                              <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> 9 ;
+                                                                              rdfs:comment "Season9"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Furniture
+                :InSeries
+                :Item
+                :OnAir
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character>
+                <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter>
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Joey
+                        :MatLeBlanc
+                        :NBC
+                        :S03E21
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8>
+                        <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
