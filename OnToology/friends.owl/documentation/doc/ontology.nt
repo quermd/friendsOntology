@@ -1,0 +1,1254 @@
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://purl.org/dc/elements/1.1/created> "2022-04-16T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://purl.org/dc/elements/1.1/creator> "Quer Masagué Deu" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://purl.org/dc/elements/1.1/title> "Friends TV Series ontology" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://purl.org/dc/terms/contributor> "Quer Masagué Deu" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Contry data type" .
+# 
+# http://dbpedia.org/ontology/Gender
+<http://dbpedia.org/ontology/Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://dbpedia.org/ontology/Gender> <http://www.w3.org/2000/01/rdf-schema#comment> "Gender data type" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "An intem belongs to an individual" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongsTo" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "an item of a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToPlace" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "This character appears in that episode"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/characterAppearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "characterAppearsInEpisode" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Emission of In Series show or spot" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/emissionOfInSeries> <http://www.w3.org/2000/01/rdf-schema#label> "emissionOfInSeries" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "In this episode appears that character"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/episdodeHasCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "episdodeHasCharacter" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2000/01/rdf-schema#comment> "the emision of an episode" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> <http://www.w3.org/2000/01/rdf-schema#label> "epìsodeFirstOnAir" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional Character appearance in In Series" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/fictionalCharacterAppearsInInSeries> <http://www.w3.org/2000/01/rdf-schema#label> "fictionalCharacterAppearsInInSeries" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "The emision of an episode" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "firstOnAirEpisode" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> <http://www.w3.org/2000/01/rdf-schema#comment> "a place has furniture" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasFurniture> <http://www.w3.org/2000/01/rdf-schema#label> "hasFurniture" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual has an item" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItem> <http://www.w3.org/2000/01/rdf-schema#label> "hasItem" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/2000/01/rdf-schema#comment> "A pet has a master/owner"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaster" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/2000/01/rdf-schema#comment> "A job has workers" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> <http://www.w3.org/2000/01/rdf-schema#label> "hasWorker" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> <http://www.w3.org/2000/01/rdf-schema#comment> "InSeries show or spot emited" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesEmission> <http://www.w3.org/2000/01/rdf-schema#label> "inSeriesEmission" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "In Series appearance of Fictional Character" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/inSeriesHasFictionaCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "inSeriesHasFictionaCharacter" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A character may have a pet"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.w3.org/2000/01/rdf-schema#label> "isMasterOf" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "A job is developed in a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> <http://www.w3.org/2000/01/rdf-schema#label> "jobsPlace" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters who live in a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeInhabitants> <http://www.w3.org/2000/01/rdf-schema#label> "placeInhabitants" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/2000/01/rdf-schema#comment> "the place where the job is developed" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> <http://www.w3.org/2000/01/rdf-schema#label> "placeJob" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/2000/01/rdf-schema#comment> "The workers that work in a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> <http://www.w3.org/2000/01/rdf-schema#label> "placeWorker" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plots that happen in a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placesPlot> <http://www.w3.org/2000/01/rdf-schema#label> "placesPlot" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Someone who works in a place" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> <http://www.w3.org/2000/01/rdf-schema#label> "worksInPlace" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "has episode"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisode" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "has owner"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/2000/01/rdf-schema#comment> "An event has participants"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> <http://www.w3.org/2000/01/rdf-schema#label> "hasParticipant"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "A series have one or more seasons"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeason"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is episode of season"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEpisodeOf" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#comment> "these are friends"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFriendOf" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "owns"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> <http://www.w3.org/2000/01/rdf-schema#label> "isOwnerOf" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://dbpedia.org/ontology/portrayer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An Actor representing a fictional character"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPortrayerOf"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode is part of a Season"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSeasonOf"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Someone lives in a place"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> <http://www.w3.org/2000/01/rdf-schema#label> "livesIn" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent participates in an event"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> <http://www.w3.org/2000/01/rdf-schema#label> "participatesIn" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "this happens in that place"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#label> "takesPlaceIn" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> <http://www.w3.org/2000/01/rdf-schema#comment> "this individual works in that place"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> <http://www.w3.org/2000/01/rdf-schema#label> "worksIn" .
+# 
+# https://dbpedia.org/ontology/portrayer
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/2000/01/rdf-schema#comment> "To represent dramatically, as on the stage"@en .
+<https://dbpedia.org/ontology/portrayer> <http://www.w3.org/2000/01/rdf-schema#label> "portrayer"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of furniture" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> <http://www.w3.org/2000/01/rdf-schema#label> "furnitureName" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "The emision had audience/viewers" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> <http://www.w3.org/2000/01/rdf-schema#label> "hasAudience" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode synopsis"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisodeSynopsis" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode title"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisodeTitle" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An item description" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasItemDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasItemDescription" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/2000/01/rdf-schema#comment> "A pet has a name" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> <http://www.w3.org/2000/01/rdf-schema#label> "hasPetName" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform name"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlatformName" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> <http://www.w3.org/2000/01/rdf-schema#comment> "The birth date"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> <http://www.w3.org/2000/01/rdf-schema#label> "hasBirthdate" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The description of the entity"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "The duration in minutes of an episode"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of emission in TV"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasEmissionDate" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of the episode in the season"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisodeNumber" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Gender> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of an artist or character"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> <http://www.w3.org/2000/01/rdf-schema#label> "hasGender" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> <http://www.w3.org/2000/01/rdf-schema#comment> "The genre of a work"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> <http://www.w3.org/2000/01/rdf-schema#label> "hasGenre" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Country> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> <http://www.w3.org/2000/01/rdf-schema#comment> "The nationality of a person"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> <http://www.w3.org/2000/01/rdf-schema#label> "hasNationality" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#comment> "The total of episodes of a season or series"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfEpisodes" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of seasons of a series"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfSeasons" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of emision of the last episode of a season"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeasonEnd" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of season"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeasonNumber" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of season start"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeasonStart" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> <http://www.w3.org/2000/01/rdf-schema#comment> "Synopsis"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> <http://www.w3.org/2000/01/rdf-schema#label> "hasSynopsis" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title that defines a series, season or episode"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Event when special character appears for first time" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CharacterIntroduction> <http://www.w3.org/2000/01/rdf-schema#label> "CharacterIntroduction" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of event that happens when In Series is emmited" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/EmisionInSeries> <http://www.w3.org/2000/01/rdf-schema#label> "EmisionInSeries" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> <http://www.w3.org/2000/01/rdf-schema#comment> "Element of Furniture" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> <http://www.w3.org/2000/01/rdf-schema#label> "Furniture" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Inside series there is tv shows and spots" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> <http://www.w3.org/2000/01/rdf-schema#label> "InSeries" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an spot inside the series" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeriesSpot> <http://www.w3.org/2000/01/rdf-schema#label> "InSeriesSpot" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that individual may have" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/2000/01/rdf-schema#comment> "Firs on air of an episode" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> <http://www.w3.org/2000/01/rdf-schema#label> "OnAir" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor or actress is a person who acts in a dramatic production and who works in film, television, theatre, or radio in that capacity." .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#participatesIn> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#worksIn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/ontology/portrayer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Is a individual from work"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Some special happening woth to mention"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/ontology/portrayer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Inside the Series, there are TV sereies with Characters portrayed by other Characters"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "InSeriesFictionalCharacter" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Inside the series, there eixist a TV series that Characters see and work in as actors"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesSeries> <http://www.w3.org/2000/01/rdf-schema#label> "InSeriesSeries" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasWorker> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/jobsPlace> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional place where someone works in"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> <http://www.w3.org/2000/01/rdf-schema#label> "Job" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://dbpedia.org/ontology/Country> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNationality> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Human living being"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid20 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> <http://www.w3.org/2000/01/rdf-schema#comment> "Domestic animal that belongs to some character"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> <http://www.w3.org/2000/01/rdf-schema#label> "Pet" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeJob> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/placeWorker> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasOwner> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional place where things happens"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "Media platform where the serie was emmited"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#takesPlaceIn> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> <http://www.w3.org/2000/01/rdf-schema#comment> "A plot explanains what happens in a series, season or  episode"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> <http://www.w3.org/2000/01/rdf-schema#label> "Plot" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "A series is a tv show divided in several episodes"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+_:genid32 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/epìsodeFirstOnAir> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid40 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonEnd> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonStart> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> <http://www.w3.org/2000/01/rdf-schema#label> "Season" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid42 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasParticipants> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> <http://www.w3.org/2000/01/rdf-schema#comment> "Special event where two people get married"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Wedding> <http://www.w3.org/2000/01/rdf-schema#label> "Wedding" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/belongsToPlace> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/furnitureName> "Sofa" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/CentralPerkSofa> <http://www.w3.org/2000/01/rdf-schema#comment> "Central Perk sofa" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <https://dbpedia.org/ontology/portrayer> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Male"^^<http://dbpedia.org/ontology/Gender> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Joey Tribbiani" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> <http://www.w3.org/2000/01/rdf-schema#comment> "Joey Tribbiani character" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> "1967-07-25T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Male"^^<http://dbpedia.org/ontology/Gender> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Matthew Steven \"Matt\" LeBlanc" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor Mat LeBlanc" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPlatformName> "NBC" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform NBC" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/firstOnAirEpisode> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasAudience> "21500000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEmissionDate> "1994-11-22T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S01E01OnAir> <http://www.w3.org/2000/01/rdf-schema#comment> "Emission of ep1 s1" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> "Pete offers Monica the head chef job at a new restaurant he just bought, but she suspects he is using it to woo her. When he insists he is over her and has met someone else, Phoebe correctly surmises he is lying. While Pete and Monica inspect the restaurant, Monica realizes Pete's true motive, then surprisingly discovers she has genuine feelings for him. Joey and Chandler adopt a chick and a duck. When Rachel struggles to get ready for a work event due to a broken rib, Ross tries to assist her, then ultimately skips being on a panel for the Discovery Channel to take her to a hospital when he realizes she is in too much pain to attend the event. This leaves her touched by what he gave up to help her, and she is left feeling positive about him for the first time in a long time." .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> "The One With A Chick And A Duck" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode 21 season3" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDescription> "Central Perk" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> <http://www.w3.org/2000/01/rdf-schema#comment> "Central Perk bar" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasMaster> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasPetName> "Chick" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> <http://www.w3.org/2000/01/rdf-schema#comment> "Pet Chick" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeason> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGenre> "Sitcom" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfSeasons> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSynopsis> "Episodes depict the friends comedic and romantic adventures and career issues." .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasTitle> "Friends" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.w3.org/2000/01/rdf-schema#comment> "Friends ontology"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Friends"@en .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://friends.fandom.com/wiki/Friends_Wiki"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isPortraierOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasBirthdate> "1969-02-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Female"^^<http://dbpedia.org/ontology/Gender> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Jennifer Aniston" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> <http://www.w3.org/2000/01/rdf-schema#comment> "Jennifer Aniston"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <https://dbpedia.org/ontology/portrayer> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasGender> "Female"^^<http://dbpedia.org/ontology/Gender> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasName> "Rachel Green" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> <http://www.w3.org/2000/01/rdf-schema#comment> "Rachel Green instance of Character"@en .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isEpisodeOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeSynopsis> "After leaving her fiancé, Barry, at the altar, Rachel finds herself in Central Perk Café, soaking wet in her wedding dress, looking for her old friend Monica. Rachel ends up moving into Monica's New York apartment. Chandler and Joey, who live across the hall from Monica, console Ross after his wife Carol, has just left him for a woman. Monica, a chef, falls for \"Paul the Wine Guy\" only to be crushed that their night of passion was merely a one-night stand. The gang urge Rachel to be more independent by cutting up her father's credit cards. Rachel, who has never worked before, is offered a waitress job at Central Perk. Ross, who has had a crush on Rachel since high school, asks her out." .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/hasEpisodeTitle> "\"Pilot\"\n\"The One Where Monica Gets a Roommate\"\n\"The One Where It All Began\"\n\"The First One\"" .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasDuration> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode 1 season 1" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> <http://www.w3.org/2000/01/rdf-schema#comment> "Season1" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> <http://www.w3.org/2000/01/rdf-schema#comment> "Season10" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> <http://www.w3.org/2000/01/rdf-schema#comment> "Season2" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasEpisode> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> <http://www.w3.org/2000/01/rdf-schema#comment> "Season3" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> <http://www.w3.org/2000/01/rdf-schema#comment> "Season4" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> <http://www.w3.org/2000/01/rdf-schema#comment> "Season5" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> <http://www.w3.org/2000/01/rdf-schema#comment> "Season6" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> <http://www.w3.org/2000/01/rdf-schema#comment> "Season7" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> <http://www.w3.org/2000/01/rdf-schema#comment> "Season8" .
+# 
+# http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isSeasonOf> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasNumberOfEpisodes> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#hasSeasonNumber> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> <http://www.w3.org/2000/01/rdf-schema#comment> "Season9" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid43 <http://www.w3.org/2002/07/owl#members> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionSeason> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#TelevisionEpisode> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Series> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Plot> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Platform> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Person> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Job> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Event> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/OnAir> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Item> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/InSeries> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Furniture> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid58 <http://www.w3.org/2002/07/owl#members> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#InSeriesFictionalCharacter> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Actor> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid62 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season9> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season8> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season7> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season6> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season5> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season4> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season3> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season2> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season10> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Season1> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#S01E01> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#RachelGreen> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#JenniferAniston> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Friends> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Chick> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#CentralPerk> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/S03E21> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/NBC> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/MatLeBlanc> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/Joey> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#P> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid83 <http://www.w3.org/2003/11/swrl#body> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
+_:genid85 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#H> .
+_:genid85 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#C> .
+_:genid85 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#P> .
+_:genid87 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#C> .
+_:genid87 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#P> .
+_:genid89 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Pet> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid91 .
+_:genid91 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#C> .
+_:genid91 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid83 <http://www.w3.org/2003/11/swrl#head> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#H> .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#P> .
+_:genid93 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#livesIn> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid94 <http://www.w3.org/2003/11/swrl#body> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#P> .
+_:genid96 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#B> .
+_:genid96 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#isOwnerOf> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#B> .
+_:genid98 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#P> .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#C> .
+_:genid100 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/worksInPlace> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#P> .
+_:genid102 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Place> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#C> .
+_:genid104 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/#Character> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid94 <http://www.w3.org/2003/11/swrl#head> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid106 .
+_:genid106 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#C> .
+_:genid106 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#B> .
+_:genid106 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/isMasterOf> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
